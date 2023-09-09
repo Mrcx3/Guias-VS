@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="pedidos">Ingrese "S" o "N"</label>
+        <input type="text" id="pedidos" name="pedidos">
+        <button type="button" onclick="pedido()">click</button>
+    </form>
+    <script>
+        function pedido(){        
+            let pedidos=document.getElementById("pedidos").value;
+            if (pedidos == "S" || pedidos == "N"){
+            alert("Correcto");
+            }
+            else{
+                alert("Incorrecto")
+            }
+        }
+    </script>
+</body>
+</html>
+<!--    Realiza un programa que sólo permita introducir los caracteres ‘S’ y ‘N’. Si el usuario 
+ingresa alguno de esos dos caracteres se deberá de imprimir un mensaje por pantalla 
+que diga “CORRECTO”, en caso contrario, se deberá imprimir “INCORRECTO”.  -->

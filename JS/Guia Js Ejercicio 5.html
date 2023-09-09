@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numero1 = parseInt(prompt("Inserte un numero"));
+        let numero2 = parseInt(prompt("Inserte otro numero"));
+        let respuesta = prompt("Menu\n 1: Suma \n 2: Resta \n 3: Multiplicacion\n 4: Division");
+        // let respuesta=document.getElementById("respuesta").value;
+        switch (parseInt (respuesta)) {
+            case 1:
+                alert(" la suma de los numeros es igual a " + (numero1 + numero2));
+                break;
+            case 2:
+                alert(" la resta de los numeros es igual a " + (numero1 - numero2));
+                break;
+            case 3:
+                alert(" la multiplicacion de los numeros es igual a " + (numero1 * numero2));
+                break;
+            case 4:
+                alert(" la division de los numeros es igual a " + (numero1 / numero2));
+                break;
+        }        
+    </script>
+</body>
+
+</html>
+<!--  Construir un programa que simule un menú de opciones para realizar las cuatro 
+operaciones aritméticas básicas (suma, resta, multiplicación y división) con dos valores 
+numéricos enteros. El usuario, además, debe especificar la operación con el primer 
+carácter de la operación que desea realizar: ‘S' o ‘s’ para la suma, ‘R’ o ‘r’ para la resta, ‘M’ 
+o ‘m’ para la multiplicación y ‘D’ o ‘d’ para la división.  -->

@@ -1,0 +1,11 @@
+a:link{
+color:  #CC0000;
+}
+a:visited{
+    color: #CCC;
+}
+a:hover {
+    color: #FFF;
+    background: #CC0000;
+}
+    /* 1 link sin visitar  4 visitado 7 mouse sobre el link */

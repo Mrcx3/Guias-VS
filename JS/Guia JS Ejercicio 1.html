@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Algoritmo del clima</title>
+  </head>
+  <body>
+    <form>
+      <label for="clima">¿Cómo está el día de hoy?</label>
+      <input type="text" id="clima" name="clima">
+      <button type="button" onclick="mostrarClima()">Mostrar clima</button>
+    </form>
+    <script>
+      function mostrarClima() {
+        let clima = document.getElementById("clima").value;       
+        alert(`El día de hoy está ${clima}`);
+        // let clima = `El día de hoy está ${clima}` no funciona, hay que guardar clima primero.;
+      }
+    </script>
+  </body>
+</html>
+<!--   Escribir un algoritmo en el cual se consulte al usuario que ingrese ¿cómo está el día de 
+  hoy? (soleado, nublado, lloviendo). A continuación, mostrar por pantalla un mensaje que 
+  indique “El día de hoy está ...”, completando el mensaje con el dato que ingresó el usuario  Escribir un algoritmo en el cual se consulte al usuario que ingrese ¿cómo está el día de 
+  hoy? (soleado, nublado, lloviendo). A continuación, mostrar por pantalla un mensaje que 
+  indique “El día de hoy está ...”, completando el mensaje con el dato que ingresó el usuario -->

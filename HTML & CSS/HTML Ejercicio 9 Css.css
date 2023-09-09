@@ -1,0 +1,60 @@
+/* Titulo tamaño 1 */
+h1 {
+    color: rgb(0, 180, 120);
+}
+/* Titulo tamañano 2 */
+h2 {
+    color: blue;
+}
+/* Titulo de tabla */
+th {
+    color:orange;
+}
+td{
+    color: green;
+}
+/* Remarcada */
+Strong {
+    color:red;
+}
+/* Letra de cursiva */
+em{
+    color:blue;
+}
+table,
+td,
+tr,
+th {
+  border-collapse: collapse;
+  border: 1px solid black;  
+  padding: 2px;
+}
+/* pie de tabla */
+tfoot { color: red; }
+td strong{
+color:orange;
+}
+#parrafoverde {
+    color: rgb(147, 168, 28);
+  }
+/* <table border="1">
+        <tr>
+            <th align="left">Año</th>
+            <th>Disco</th>
+        </tr>
+        <tr>
+            <td>1965</td>
+            <td>Help!</td>
+        </tr>
+        <tr>
+            <td>1968</td>
+            <td>The Beatles</td>
+          </tr>
+          <tr>
+            <td>1969</td>
+            <td>Abbey Road</td>
+          </tr>
+          <tr>
+            <td colspan="2" aling="center">"Abbey Road fue su último disco."</td>
+          </tr>
+        </table> */
