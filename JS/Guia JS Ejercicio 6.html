@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="numeros">Ingrese un numero</label>
+        <input type="number" id="numeros" name="numeros">
+        <button type="button" onclick="ParOImpar()">click</button>
+    </form>
+    <script>
+        function ParOImpar(){        
+            let numeros=document.getElementById("numeros").value;
+            if (numeros % 2==0) {
+            alert("Par");
+            }
+            else{
+                alert("Impar")
+            }
+        }
+    </script>
+    
+</body>
+</html>
+<!-- Realizar un programa que, dado un número entero, visualice en pantalla si es par o impar. 
+En caso de que el valor ingresado sea 0, se debe mostrar “el número no es par ni impar”. -->
