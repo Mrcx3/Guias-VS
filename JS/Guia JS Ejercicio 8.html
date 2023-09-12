@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numero;
+        let maximo = null;
+        let minimo = null;
+        let suma = 0;
+        let cantidad = 0;
+
+        do {
+            numero = parseInt(prompt("Ingrese un numero entero o el 0 para salir"));
+
+            if (numero !== 0) {
+                if (maximo === null || numero > maximo) {
+                    maximo = numero;
+                }
+
+                if (minimo === null || numero < minimo) {
+                    minimo = numero;
+                }
+
+                suma += numero;
+                cantidad++;
+            }
+        } while (numero !== 0);
+
+        if (cantidad > 0) {
+            const promedio = suma / cantidad;
+
+            alert(`El máximo numero ingresado es ${maximo}.`);
+            alert(`El mínimo numero ingresado es ${minimo}.`);
+            alert(`El promedio de los numeros ingresados es ${promedio}.`);
+        } else {
+            alert("No se ingresaron numeros mayores a 0");
+        }
+    </script>
+
+</body>
+
+</html>
+<!-- Escribir un programa que lea números enteros hasta teclear 0 (cero). Al finalizar el 
+programa se debe mostrar el máximo número ingresado, el mínimo, y el promedio de 
+todos ellos. -->
