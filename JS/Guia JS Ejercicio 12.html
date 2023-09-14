@@ -8,9 +8,19 @@
 </head>
 
 <body>
+
+    <label for="dato">Ingresa un dato:</label>
+    <input type="text" id="dato">
+    <button onclick="obtenerTipo()">Obtener Tipo</button>
+
     <script>
-    const tipoDeDato = (arg) => typeof arg;
+        const obtenerTipo = () => {
+            const dato = document.getElementById('dato').value;
+            const tipo = typeof JSON.parse(dato);
+            alert(`El tipo de dato ingresado es: ${tipo}`);
+        };
     </script>
+
 </body>
 
 </html>
