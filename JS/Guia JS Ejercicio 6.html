@@ -14,13 +14,16 @@
     <script>
         function ParOImpar(){        
             let numeros=document.getElementById("numeros").value;
-            if (numeros % 2==0) {
-            alert("Par");
+            if (numeros==0){
+            alert("el número no es par ni impar")
             }
+            else if(numeros % 2==0) {
+            alert("Par");
+            }        
             else{
                 alert("Impar")
-            }
-        }
+            }   
+        }      
     </script>
     
 </body>
