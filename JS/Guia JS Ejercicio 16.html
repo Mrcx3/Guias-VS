@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function numeroAleatorio() {
+            // si no uso math.floor me da numeros con decimales, floor redondea hacia abajo.
+            return Math.floor(Math.random() * 100);
+        }
+
+        let vector1 = Array.from({ length: 5 }, numeroAleatorio);
+        let vector2 = Array.from({ length: 5 }, numeroAleatorio);
+
+        // Mostrar los vectores por pantalla
+        alert("Vector 1: " + vector1);
+        alert("Vector 2: " + vector2);
+    </script>
+
+</body>
+
+</html>
+<!-- Realizar un programa que rellene dos vectores al mismo tiempo, con 5 valores aleatorios 
+y los muestre por pantalla.  -->
