@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        
+        var valores = [true, 5, false, "hola", "adios", 2];
+        //array1 aloja el "hola" y array2 "adios"
+        var array1 = valores[3];
+        var array2 = valores[4];
+        // si es mayor asigna el array1 a la variable y en caso contrario le asigna el array2
+        var mayor = (array1.length > array2.length) ? array1 : array2;
+        alert('El texto mayor es: ' + textoMayor);
+
+        var bool1 = valores[0];
+        var bool2 = valores[2];
+        //  || or devuelve true si al menos uno de sus operadores es true
+        alert('True: ' + (bool1 || bool2)); // OR operator gives True
+        // && and solo devuelve true si ambos son true
+        alert("false: " + (bool1 && bool2));
+        var n1 = valores[1];
+        var n2 = valores[5];
+        alert("Suma: " + (n1 + n2));
+        alert("Resta: " + (n1 - n2));
+        alert("Multiplicación: " + (n1 * n2));
+        alert("División: " + (n1 / n2));
+        alert("Módulo: " + (n1 % n2));
     </script>
-    
 </body>
 </html>
+<!-- A partir del siguiente array: var valores = [true, 5, false, "hola", "adios", 2]:
+a) Determinar cual de los dos elementos de texto es mayor
+b) Utilizando exclusivamente los dos valores booleanos del array, determinar los 
+operadores necesarios para obtener un resultado true y otro resultado false
+c) Determinar el resultado de las cinco operaciones matemáticas realizadas con los 
+dos elementos numéricos -->
