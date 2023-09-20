@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function numeroAleatorio() {
+            // si no uso math.floor da numeros con decimales, floor redondea hacia abajo.
+            return Math.floor(Math.random() * 100);
+        }
+
+        let vectorA = Array.from({ length: 50 }, numeroAleatorio);
+        alert("Vector A: " + vectorA);
+        // la linea de abajo ordena a y b siempre que sea mayor que a - b. (de menor a mayor)
+        vectorA.sort((a, b) => a - b);
+        alert("vectorA de menor a mayor " + vectorA);
+        let vectorB = [];        
+        for (let i = 0; i < 10; i++) {
+            //vectorB en posicion i tiene el valor de vectorA en la misma posicion.
+            vectorB[i] = vectorA[i];
+            for (let i = 11; i < 20; i++) {
+                vectorB[i] = 0.5;
+            }
+        }
+        alert(vectorB);
+
+    </script>
+</body>
+
+</html>
+<!-- Realizar un programa en Java donde se creen dos arreglos: el primero será un arreglo A 
+de 50 números reales, y el segundo B, un arreglo de 20 números, también reales. El 
+programa deberá inicializar el arreglo A con números aleatorios y mostrarlo por pantalla. 
+Luego, el arreglo A se debe ordenar de menor a mayor y copiar los primeros 10 números 
+ordenados al arreglo B de 20 elementos, y rellenar los 10 últimos elementos con el valor 
+0.5. Mostrar los dos arreglos resultantes: el ordenado de 50 elementos y el combinado 
+de 20. -->
