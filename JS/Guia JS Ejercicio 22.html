@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="mensaje">¿Que mensaje queres que muestre?</label>
+        <input type="text" id="mensaje" name="mensaje">
+        <button type="button" onclick="mostrarMensaje()">Mostrar mensaje</button>
+    </form>
+    <script>
+        function mostrarMensaje() {
+            let mensaje = document.getElementById("mensaje").value;
+            alert(`${mensaje}`);
+            // let clima = `El día de hoy está ${clima}` no funciona, hay que guardar clima primero.;
+        }
+    </script>
+
+</body>
+
+</html>
+<!-- Escribir un programa de JavaScript que al clickear un botón muestre un mensaje a 
+elección -->

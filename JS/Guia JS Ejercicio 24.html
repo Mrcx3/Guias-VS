@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Algoritmo pi</title>
+  </head>
+  <body>
+    <form>
+      <label for="radio">¿Cual es el radio?</label>
+      <input type="number" id="radio" name="radio">
+      <button type="button" onclick="mostrarResultados()">Mostrar resultados</button>
+    </form>
+    <script>
+      function mostrarResultados() {
+        let radio = document.getElementById("radio").value; 
+        const PI = 3.141592653589793;
+        var area=PI*radio*radio;
+        var perimetro=2*PI*radio;
+        alert(`El area es ${area} y el perimetro es ${perimetro}`);          
+      }
+    </script>
+  </body>
+</html>
+<!-- Escribir un programa de JavaScript que a través de un formulario calcule el radio de un 
+circulo y lo muestre en el HTML -->
