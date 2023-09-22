@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-
-    </script>    
+        let parrafo = "Un párrafo es una unidad de un texto compuesta por una o varias oraciones, que comienza con una mayúscula y que termina con un punto y aparte1. Los párrafos cortos tienen entre tres y seis líneas, y lo recomendable es que no tengan más de cuatro o cinco oraciones1. Aunque pueden tener solo una línea de contenido o no contener ningún punto y seguido, siguen siendo un párrafo marcado por un punto y final2. Los párrafos cortos se utilizan en textos cortos como avisos publicitarios o clasificados3.";
+        //.split cada que encuentre un espacio en blanco en la cadena parrafo
+        //la cadena se divide en ese punto y lo guarda en el array palabras
+        let palabras = parrafo.split(' ');
+        //for para buscar palabras con 8 letras, span para darle el background amarillo
+        for (let i = 0; i < palabras.length; i++) {
+            if (palabras[i].length > 8) {
+                palabras[i] = '<span style="background-color: yellow;">' + palabras[i] + '</span>';
+            }
+        }
+        //join une todos los elementos del array palabras, parrafo pasa a contener todas las palabras del array palabras
+        parrafo = palabras.join(' ');
+        //document.body = body del html inner.html=parrafo aplica el estilo de parrafo?.
+        document.body.innerHTML = parrafo;
+    </script>
 </body>
+
 </html>
 <!-- Resalte todas las palabras de más de 8 caracteres en el texto del párrafo (con un fondo 
 amarillo, por ejemplo) -->
