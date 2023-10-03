@@ -35,3 +35,10 @@ function App() {
 }
 
 export default App
+// Crear un proyecto compuesto de un solo Functional Component. En dicho componente
+// mostrar al menos dos datos, como por ejemplo titulo y subtitulo.
+// El componente debe ser llamado desde App, a continuación, se propondrá la jerarquía 
+// del árbol de componentes y de como es el llamado desde main.jsx
+// • main.jsx
+// o App
+// § Ejemplo
