@@ -15,6 +15,7 @@ const Main = () => {
   return (<div>
   <Hijo nombre="Chiquito"/> 
   <Hijo nombre="Filomena"/>
+  <Hijo nombre="pedrito"apellido=" carlitos"/>
   </div>
   );
 };

@@ -36,4 +36,4 @@ export default App;
 // § Footer 
 // Al hacer click sobre las dos posibles opciones en el NavBar, se deberá cambiar entre 
 // Main1 y Main2 dependiendo de la navegación. Para lograrlo se deberá instalar y usar 
-// React Router Dom dom 
+// React Router Dom dom
