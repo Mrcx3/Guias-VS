@@ -1,7 +1,7 @@
-import React from 'react';[^1^][1][^2^][2]
+import React from 'react';
 import CharacterComponent from './CharacterComponent';
 
-function App() {[^3^][3]
+function App() {
   return (
     <div className="App">
       <CharacterComponent />
@@ -9,4 +9,4 @@ function App() {[^3^][3]
   );
 }
 
-export default App;[^4^][4]
+export default App;

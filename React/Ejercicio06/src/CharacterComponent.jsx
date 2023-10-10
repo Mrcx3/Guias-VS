@@ -6,8 +6,8 @@ import Servicio from './Servicios/Servicio';
 // Definimos un componente funcional de React llamado CharacterComponent.
 const CharacterComponent = () => {
   // Utilizamos el hook useState para crear una variable de estado llamada characters y una función para actualizarla llamada setCharacters.
-  const [characters, setCharacters] = useState([]);//[^2^][2]
-
+const [characters, setCharacters] = useState([]);//[^2^][2]
+  
   // Utilizamos el hook useEffect para ejecutar código después de que se haya renderizado el componente.
   useEffect(() => {
     // Definimos y llamamos a una función asíncrona llamada fetchData.
