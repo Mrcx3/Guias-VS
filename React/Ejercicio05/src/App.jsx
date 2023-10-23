@@ -8,11 +8,11 @@ function Contador() {
   return ( 
     <div>
       <p>Has hecho clic {contador} veces</p> 
-      <button onClick={() => setContador(contador + 1)}> // Botón que, cuando se hace clic en él, incrementa contador en 1
+      <button onClick={() => setContador(contador + 1)}> // Botón qué, cuando se hace clic en él, incrementa contador en 1
         Haz clic aquí
       </button>
     </div>
   );
-}
+} 
 
 export default Contador;
